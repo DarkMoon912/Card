@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    display: block;
+    margin: 0;
+}
+
+body {
+    background-color: #212125;
+}
+
+title {
+    color: #212125;
+}
+
+.app {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.app {
+    width: auto;
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.profile {
+    position: relative;
+    height: auto;
+    width: 1540px;
+    top: 162px;
+    background-color: #18191C;
+    border-radius: 40px;
+    margin: 0px auto 162px auto;
+}
+
+.profile .main, .profile .status, .profile .servers, .profile .presences {
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+.profile .main {
+    padding-top: 125px;
+    display: flex;
+    height: 275px;
+}
+
+.profile .main .avatar {
+    border-radius: 100%;
+}
+
+.profile .main .content {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 42px;
+    padding-left: 12px;
+    margin-top: auto;
+    color: #f5f5f5;
+    margin-bottom: 14px;
+}
+
+.profile .main .content a {
+    text-decoration: none;
+    color: #f5f5f5;
+    transition: 0.5s;
+}
+
+.profile .main .content a:hover {
+    color: #dbdbdb;
+}
+
+.profile .main .image .presence, .profile .main .image .avatar {
+    position: relative;
+}
+
+.profile .main .image .presence {
+    top: -105px;
+    margin-left: auto;
+    margin-right: 0px;
+}
+
+.profile .main .badge {
+    margin: auto 0px 14px auto;
+}
+
+.profile .main .badge img {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.profile .status {
+    padding-top: 28px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 18px;
+    color: #f5f5f5;
+    display: flex;
+}
+
+.profile .status img, .profile .status p {
+    display: inline-block;
+}
+
+.profile .status p {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+}
+
+.profile .servers {
+    padding-top: 38px;
+    padding-bottom: 50px;
+}
+
+.profile .servers p {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 28px;
+    color: #f5f5f5;
+    margin-bottom: 12px;
+}
+
+.profile .servers .guilds {
+    display: flex;
+}
+
+.profile .servers .server {
+    display: flex;
+    width: 282px;
+    height: 108px;
+    background-color: #1f1f23;
+    border-radius: 18px;
+    margin-right: 48px;
+}
+
+.profile .servers .server img {
+    border-radius: 100%;
+    margin: auto 0px auto 14px;
+}
+
+.profile .servers .server .description p {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 22px;
+    color: #f5f5f5;
+    text-align: center;
+    margin: 18px auto auto 40px;
+}
+
+.profile .servers .server .description .button {
+    border-radius: 8px;
+    border: 1px solid #f5f5f5;
+    margin: 14px auto 0px 40px;
+    width: 88px;
+    transition: 0.4s;
+}
+
+.profile .servers .server .description .button a {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+    color: #f5f5f5;
+    text-decoration: none;
+    text-align: center;
+    padding: 4px;
+    transition: 0.4s;
+}
+
+.profile .servers .server .description .button:hover {
+    background-color: #f5f5f5;
+}
+
+.profile .servers .server .description .button a:hover {
+    color: #1f1f23;
+}
+
+.profile .presences p {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 28px;
+    color: #f5f5f5;
+    margin-bottom: 12px;
+}
+
+.profile .presences .games {
+    display: flex;
+}
+
+.profile .presences .games .game {
+    display: flex;
+    width: 282px;
+    height: 108px;
+    background-color: #1f1f23;
+    border-radius: 18px;
+    margin-right: 48px;
+}
+
+.profile .presences .games .game img {
+    border-radius: 8px;
+    margin: auto 0px auto 14px;
+}
+
+.profile .presences .games .game .description {
+    margin: auto;
+    margin-left: 10px;
+}
+
+.profile .presences .games .game .description h4 {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    color: #f5f5f5;
+}
+
+.profile .presences .games .game .description h5 {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    color: #f5f5f5;
+}
+
+.profile .footer {
+    margin-top: 22px;
+}
+
+.profile .footer p {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    color: #f5f5f5;
+    padding: 18px;
+}
+
+
+@media screen and (max-width: 1540px) {
+    * {
+        text-align: center;
+    }
+
+    .profile {
+        width: auto;
+        display: block;
+    }
+
+    .profile .main {
+        display: block;
+        height: auto;
+    }
+
+    .profile .main .image {
+        height: 400px;
+    }
+    
+    .profile .main .image .avatar {
+        margin: 0px auto 0px auto;
+        height: 345px;
+        width: 345px;
+    }
+
+    .profile .main .image .presence {
+        height: 145px;
+        width: 145px;
+        margin-left: 450px;
+        margin-right: auto;
+        top: -118px
+    }
+
+    .profile .main .content a {
+        font-size: 48px;
+    }
+
+    .profile .status img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .profile .status {
+        top: 100px;
+        display: flex;
+        font-size: 28px;
+    }
+
+    .profile .servers p, .profile .presences p {
+        font-size: 34px;
+    }
+
+    .profile .servers .server {
+        width: 302px;
+        height: auto;
+        margin: 8px auto 0px auto;
+        display: block;
+    }
+
+    .profile .servers .server img {
+        width: 160px;
+        height: 160px;
+    }
+
+    .profile .servers .server img, .profile .servers .server .description p, .profile .servers .server .description .button {
+        margin: 8px auto 0px auto;
+    }
+
+    .profile .servers .server .description p, .profile .servers .server .description .button {
+        margin-top: 16px;
+    }
+
+    .profile .servers .server .description .button {
+        width: 160px;
+        margin-bottom: 8px;
+        border-radius: 8px;
+        border: 2px solid #f5f5f5;
+    }
+
+    .profile .presences .games .game {
+        width: 302px;
+        height: 138px;
+    }
+
+    .profile .presences .games .game img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .profile .presences .games .game .description h4,
+    .profile .presences .games .game .description h5 {
+        text-align: start;
+    }
+}
