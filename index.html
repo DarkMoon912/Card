@@ -18,10 +18,8 @@
                     </div>
                     <div class='badge' id='badge'>
                         <img src='./assets/HypeSquad.png' width='45' height='45' alt='balance' class='balance'>
-                        <img src='./assets/Activedev.png' width='45' height='45' alt='activedev' class='activedev'>
                         <img src='./assets/Nitro.png' width='45' height='45' alt='nitro' class='nitro'>
                         <img src='./assets/Boost.png' width='45' height='45' alt='boost' class='boost'>
-                        
                     </div>
                 </div>
                 <div class='status' id="status">
@@ -81,13 +79,14 @@
                             `<p>Активность</p>` + '\n'
                             + `<div class='games'>` + '\n'
                             + activities.map(a => {
+                                console.log(a)
                                 return (
                                     `<div class='game'>` + '\n'
-                                    + `<img src='./assets/Spotify.png' width='80' height='80' alt='spotify'class='spotify'>` + '\n'
+                                    + `<img src='${a.name === 'Spotify' ? './assets/Spotify.png' : a.assets.largeImage}' width='80' height='80' alt='spotify'class='spotify'>` + '\n'
                                     + `<div class='description'>` + '\n'
-                                    + `<h4>${a.details}</h4>` + '\n'
-                                    + `<h5>${a.state}</h5>` + '\n'
-                                    + `<h5>${a.assets.largeText}</h5>` + '\n'
+                                    + (a.name ? `<h4>${a.name}</h4>` : '') + '\n'
+                                    + (a.state ? `<h5>${a.state}</h5>` : '') + '\n'
+                                    + (a.details ? `<h5>${a.details}</h5>` : '') + '\n'
                                     + '</div>' + '\n'
                                     + '</div>'
                                 )
@@ -109,7 +108,6 @@
             fetch('https://api.oneheka.com/discord/guilds')
             .then(async (data) => {
                 const guilds = await data.json()
-                console.log(guilds)
                 if(guilds.length > 0) {
                     document.getElementById('servers').innerHTML = (
                         `<p>Работаю на</p>` + '\n'
