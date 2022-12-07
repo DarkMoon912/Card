@@ -41,7 +41,7 @@
             <br>
         </div>
         <script>
-            fetch('https://api.oneheka.com/discord/accounts?id=856592186639384636')
+            fetch('https://api.oneheka.com/discord/accounts?id=758717520525000794')
             .then(async (data) => {
                 const res = await data.json()
                 if(res?.username) {
@@ -61,7 +61,8 @@
                                 console.log(a)
                                 return (
                                     `<div class='game'>` + '\n'
-                                    + `<img src='${a.name === 'Spotify' ? './assets/Spotify.png' : a.assets.largeImage}' width='80' height='80' alt='spotify'class='spotify'>` + '\n'
+                                    //+ `<img src='${a.name === 'Spotify' ? './assets/Spotify.png' : a.assets.largeImage}' width='80' height='80' alt='spotify'class='spotify'>` + '\n'
+                                    + `<img src='${a.assets.largeImage}' width='80' height='80' alt='spotify'class='spotify'>` + '\n'
                                     + `<div class='description'>` + '\n'
                                     + (a.name ? `<h4>${a.name}</h4>` : '') + '\n'
                                     + (a.state ? `<h5>${a.state}</h5>` : '') + '\n'
